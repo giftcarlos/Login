@@ -1,0 +1,121 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f4f4;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Login Page & OTP Page Styles */
+.login-container, .otp-container {
+    text-align: center;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-label {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    background: white;
+    padding: 0 5px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #5cb85c;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4cae4c;
+}
+
+/* OTP Page Styles */
+.email-text {
+    color: #555;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.message {
+    color: green;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.otp-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.otp-box {
+    width: 40px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+.otp-box:focus {
+    outline: none;
+    border-color: #5cb85c;
+}

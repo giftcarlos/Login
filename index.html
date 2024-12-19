@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Login Page -->
+<div id="login-page" class="page active">
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <div class="input-container">
+                <label for="username" class="input-label">Username</label>
+                <input type="text" id="username" required>
+            </div>
+
+            <div class="input-container">
+                <label for="password" class="input-label">Password</label>
+                <input type="password" id="password" required>
+            </div>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</div>
+
+<!-- OTP Page -->
+<div id="otp-page" class="page hidden">
+    <div class="otp-container">
+        <h2>OTP Verification</h2>
+        <p class="email-text">JamesHalvorson000@gmail.com</p>
+        <p id="code-sent-message" class="message">code sent</p>
+
+        <form id="otp-form">
+            <div class="otp-inputs">
+                <input type="text" maxlength="1" class="otp-box" required>
+                <input type="text" maxlength="1" class="otp-box" required>
+                <input type="text" maxlength="1" class="otp-box" required>
+                <input type="text" maxlength="1" class="otp-box" required>
+                <input type="text" maxlength="1" class="otp-box" required>
+                <input type="text" maxlength="1" class="otp-box" required>
+            </div>
+            <button type="submit">Verify</button>
+        </form>
+    </div>
+</div>
+
+<!-- Home Page -->
+<div id="home-page" class="page hidden">
+    <h1>Welcome to the Home Page</h1>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
